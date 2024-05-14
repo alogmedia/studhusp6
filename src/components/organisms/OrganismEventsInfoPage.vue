@@ -1,8 +1,8 @@
 <template>
-    <div class="modal-overlay">
+    <div class="modal-overlay" v-show="isModalVisible">
 <div class="modal-event">
 <div class="event-section">
-    <AtomEventsBanner id="event-section-img" @click="closeModal"/>
+    <AtomEventsBanner @click="closeModal" id="event-section-img" />
     <div class="date-event">
         <MoleculeDate/>
     </div>
@@ -18,10 +18,17 @@
 </div>
 </template>
 <script setup>
+
 import MoleculeAbout from '@/components/molecules/MoleculeAbout.vue';
 import MoleculeDate from '@/components/molecules/MoleculeDate.vue';
 import MoleculeInfo from '@/components/molecules/MoleculeInfo.vue';
 import MoleculeQr from '@/components/molecules/MoleculeQr.vue';
 import AtomEventsBanner from '@/components/atoms/AtomEventsBanner.vue';
+import { ref } from 'vue';
+
+const isModalVisible = ref(true);
+const closeModal = () => {
+  isModalVisible.value = false;
+};
 
 </script>
