@@ -8,7 +8,6 @@ import OrganismEventsInfoPage from '@/components/organisms/OrganismEventsInfoPag
   <main>
     <MoleculeBack />
     <OrganismEventsPage />
-
   </main>
 </template>
 
