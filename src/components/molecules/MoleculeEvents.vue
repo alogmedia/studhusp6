@@ -7,11 +7,13 @@
         :key="index"
         :src="event.image"
         :alt="`Image for ${event.name}`"
-        @click="toggleModal"
+        @click="() => togglePopup('buttonTrigger')"
       />
     </div>
   </div>
-  <OrganismEventsInfoPage v-if="isModalVisible" />
+  <OrganismEventsInfoPage 
+  v-if="popupTriggers.buttonTrigger" 
+	:togglePopup="() => togglePopup('buttonTrigger')" /> />
 </template>
 
 
@@ -21,9 +23,10 @@ import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
 import OrganismEventsInfoPage from '@/components/organisms/OrganismEventsInfoPage.vue';
 import { ref, computed, onMounted } from 'vue';
 
-const isModalVisible = ref(false);
-const toggleModal = () => {
-  isModalVisible.value = !isModalVisible.value;
+const popupTriggers = ref({buttonTrigger: false});
+
+const togglePopup = (trigger) => {
+  popupTriggers.value[trigger] = !popupTriggers.value[trigger];
 };
 
 const props = defineProps({
