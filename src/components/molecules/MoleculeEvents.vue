@@ -7,16 +7,25 @@
         :key="index"
         :src="event.image"
         :alt="`Image for ${event.name}`"
+        @click="openModal"
       />
     </div>
   </div>
+  <OrganismEventsInfoPage v-show="isEventInfoVisible" />
 </template>
 
 
 <script setup>
 import AtomEvent from '@/components/atoms/AtomEvent.vue';
 import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
+import OrganismEventsInfoPage from '@/components/organisms/OrganismEventsInfoPage.vue';
 import { ref, computed, onMounted } from 'vue';
+
+const isEventInfoVisible = ref(false);
+const openModal = () => {
+  isEventInfoVisible.value = true;
+};
+
 
 const props = defineProps({
   limit: {
