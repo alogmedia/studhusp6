@@ -1,5 +1,5 @@
 <template>
-  <carousel ref="carousel" v-model="currentSlide" :items-to-show="1">
+  <carousel ref="carousel" :items-to-show="1">
       <slide v-for="(room, index) in rooms" :key="index" class="room-container">
             <img :src="room.imageSrc" :alt="room.title">
         <div class="room-text">
