@@ -8,7 +8,6 @@
 
     <template #addons>
       <Pagination />
-      <Navigation />
     </template>
   </Carousel>
 </template>
