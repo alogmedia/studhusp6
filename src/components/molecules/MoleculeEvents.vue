@@ -7,11 +7,9 @@
         :key="index"
         :src="event.image"
         :alt="`Image for ${event.name}`"
-        @click="toggleModal"
       />
     </div>
   </div>
-  <OrganismEventsInfoPage v-if="isModalVisible" />
 </template>
 
 
@@ -20,16 +18,6 @@ import AtomEvent from '@/components/atoms/AtomEvent.vue';
 import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
 import OrganismEventsInfoPage from '@/components/organisms/OrganismEventsInfoPage.vue';
 import { ref, computed, onMounted } from 'vue';
-
-
-const isModalVisible = ref(false);
-
-
-const toggleModal = () => {
-  isModalVisible.value = !isModalVisible.value;
-  console.log('toggleModal');
-};
-
 
 const props = defineProps({
   limit: {
