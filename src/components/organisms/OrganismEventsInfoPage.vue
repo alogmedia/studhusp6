@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-overlay" v-show="isModalVisible">
+    <div class="modal-overlay" v-if="isModalVisible">
 <div class="modal-event">
 <div class="event-section">
     <AtomEventsBanner @click="closeModal" id="event-section-img"/>
@@ -25,9 +25,10 @@ import MoleculeQr from '@/components/molecules/MoleculeQr.vue';
 import AtomEventsBanner from '@/components/atoms/AtomEventsBanner.vue';
 import { ref } from 'vue';
 
-const isModalVisible = ref(true);
 
+const isModalVisible = ref(true);
 const closeModal = () => {
   isModalVisible.value = false;
+  console.log('closeModal');
 };
 </script>

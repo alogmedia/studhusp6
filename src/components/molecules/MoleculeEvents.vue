@@ -21,12 +21,15 @@ import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
 import OrganismEventsInfoPage from '@/components/organisms/OrganismEventsInfoPage.vue';
 import { ref, computed, onMounted } from 'vue';
 
+
 const isModalVisible = ref(false);
 
 
 const toggleModal = () => {
   isModalVisible.value = !isModalVisible.value;
+  console.log('toggleModal');
 };
+
 
 const props = defineProps({
   limit: {
