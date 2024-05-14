@@ -1,1 +1,42 @@
-*{margin:0;padding:0;box-sizing:border-box}@font-face{font-family:NeueMontreal-Regular;src:url(assets/fonts/NeueMontreal-Regular.ttf)}@font-face{font-family:NeueMontreal-Medium;src:url(assets/fonts/NeueMontreal-Regular.ttf)}@font-face{font-family:NeueMontreal-Bold;src:url(assets/fonts/NeueMontreal-Regular.ttf)}:root{font-family:NeuMontreal-Regular,sans-serif}html{font-size:calc(100vw/17280px)}@media(max-height: 939mm){html{font-size:calc(100vh/30720px)}}body{width:1080px;max-width:100vw;max-height:100vh;margin:0;overflow:hidden;display:flex;flex-direction:column;justify-content:center}/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: NeueMontreal-Regular;
+  src: url(assets/fonts/NeueMontreal-Regular.ttf);
+}
+@font-face {
+  font-family: NeueMontreal-Medium;
+  src: url(assets/fonts/NeueMontreal-Regular.ttf);
+}
+@font-face {
+  font-family: NeueMontreal-Bold;
+  src: url(assets/fonts/NeueMontreal-Regular.ttf);
+}
+:root {
+  /* color-scheme: dark light; */
+  font-family: NeuMontreal-Regular, sans-serif;
+}
+
+html {
+  font-size: calc(100vw / 17280px);
+}
+@media (max-height: 939mm) {
+  html {
+    font-size: calc(100vh / 30720px);
+  }
+}
+
+body {
+  width: 1080px;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
