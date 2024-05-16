@@ -1,6 +1,6 @@
 <template>
     <div class="events-banner">
-        <img class="event-pic" id="event-section-img" src="@/assets/images/eventimg1.jpg" alt="Event">
+        <img class="event-pic" id="event-section-img" src="@/assets/images/eventimg1.png" alt="Event">
         <AtomRoundButtonX class="x-button" />
     </div>
 </template>
