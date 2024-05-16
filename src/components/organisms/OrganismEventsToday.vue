@@ -1,5 +1,5 @@
 <template>
-  <div class="con-organism">
+  <div class="hero-today">
     <AtomSectionTitle title='EVENT IDAG'/>
     <AtomHeroImage :src="DefaultImg" :alt="imageAlt" />
   </div>
