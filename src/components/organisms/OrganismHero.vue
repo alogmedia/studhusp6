@@ -1,8 +1,9 @@
 <template>
   <Carousel :autoplay="2000" :wrap-around="true">
-    <Slide v-for="slide in 10" :key="slide">
+    <Slide v-for="(hero, index) in heros" :key="index">
       <div class="hero-banner">
-        <AtomHeroImage />
+        <!-- Pass hero.heroimg to AtomHeroImage -->
+        <AtomHeroImage :src="hero.heroimg" :alt="imageAlt" />
       </div>
     </Slide>
 
@@ -15,9 +16,27 @@
 <script setup>
 import AtomHeroImage from '@/components/atoms/AtomHeroImage.vue';
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { ref, onMounted } from 'vue';
+import { Carousel, Slide, Pagination } from 'vue3-carousel';
 
-const currentImage = "@/assets/images/heroimg1.png";
+const heros = ref([]);
+
+const getHeros = () => {
+  fetch(`https://studhus-c0295-default-rtdb.europe-west1.firebasedatabase.app/hero.json`, {
+    method: 'GET',
+  })
+  .then(rawData => rawData.json())
+  .then(data => {
+    heros.value = data; // Make sure data is correctly formatted as an array of objects
+  })
+  .catch(error => {
+    console.error('Error fetching or processing data:', error);
+  });
+};
+
+onMounted(() => {
+  getHeros();
+});
 
 defineProps({
   imageAlt: {
@@ -31,7 +50,10 @@ defineProps({
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 500px; /* Adjust the height as needed */
+  height: 500px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 </style>

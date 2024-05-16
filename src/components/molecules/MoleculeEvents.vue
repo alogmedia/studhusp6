@@ -13,7 +13,7 @@
   </div>
   <OrganismEventsInfoPage 
   v-if="popupTriggers.buttonTrigger" 
-	:togglePopup="() => togglePopup('buttonTrigger')" /> />
+	:togglePopup="() => togglePopup('buttonTrigger')" />
 </template>
 
 
