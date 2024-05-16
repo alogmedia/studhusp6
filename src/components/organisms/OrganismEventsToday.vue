@@ -1,12 +1,11 @@
 <template>
   <div class="con-organism">
     <AtomSectionTitle title='EVENT IDAG'/>
-    <HeroImage :src="DefaultImg" :alt="imageAlt" />
-  </div>
+    <AtomHeroImage :src="DefaultImg" :alt="imageAlt" />
 </template>
 <script setup>
 import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
-import HeroImage from '@/components/atoms/AtomHeroImage.vue';
+import AtomHeroImage from '@/components/atoms/AtomHeroImage.vue';
 
 defineProps({
   imageAlt: {
@@ -15,6 +14,6 @@ defineProps({
   },
 });
 
-const DefaultImg = 'src/assets/images/content/hero.png';
+const DefaultImg = "https://i.imgur.com/DvhhK2r.jpeg";
  
 </script>
