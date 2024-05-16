@@ -12,7 +12,7 @@ defineProps({
 
 const backgroundStyle = computed(() => ({
   width: '100%',
-  height: '450px', // Adjust the height as needed
+  height: '400px', // Adjust the height as needed
   backgroundSize: 'cover',
   backgroundPosition: 'center',
 }));

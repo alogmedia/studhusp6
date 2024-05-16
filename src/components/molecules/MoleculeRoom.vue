@@ -1,7 +1,7 @@
 <template>
   <carousel ref="carousel" :items-to-show="1">
       <slide v-for="(room, index) in rooms" :key="index" class="room-container">
-            <img :src="room.imageSrc" :alt="room.title">
+            <img :src="room.image" :alt="room.title">
         <div class="room-text">
             <AtomH3Title class="section-h3title-lokale">
               <span class="redcircle"></span>
@@ -22,22 +22,28 @@
   import AtomH3Title from '@/components/atoms/AtomH3Title.vue';
   import AtomParagraph from '@/components/atoms/AtomParagraph.vue';
   import 'vue3-carousel/dist/carousel.css'
+  import { ref, onMounted } from 'vue';
   import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
-  const rooms = [
-    { 
-      title: 'RESEVERET TIL EVENT', 
-      time: 'IDAG KL. 20.00 - 23.00', 
-      description: 'Bemærk: Lokalet kan frit benyttes uden for det bookede tidsrum. Spørg i baren ved spørgsmål til lokalebooking.',
-      imageSrc: 'src/assets/images/content/hero.png'
-    },
-    { 
-      title: 'RESEVERET TIL EVENT', 
-      time: 'IDAG KL. 20.00 - 23.00', 
-      description: 'Bemærk: Lokalet kan frit benyttes uden for det bookede tidsrum. Spørg i baren ved spørgsmål til lokalebooking.',
-      imageSrc: 'src/assets/images/content/hero.png'
-    },
-  ];
+  const rooms = ref([]);
+
+  const getRooms = () => {
+    fetch(`https://studhus-c0295-default-rtdb.europe-west1.firebasedatabase.app/rooms.json`, {
+      method: 'GET',
+    })
+    .then(rawData => rawData.json())
+    .then(data => {
+      rooms.value = data; // Make sure data is correctly formatted as an array of objects
+    })
+    .catch(error => {
+      console.error('Error fetching or processing data:', error);
+    });
+  };
+
+  onMounted(() => {
+    getRooms();
+  });
+
   </script>
   
   <style scoped> 
@@ -47,7 +53,6 @@
         align-items: center;
         gap:10px;
         background-color: white;
-        padding: 20px 0;
     }
      .room-text {
         display: flex;
