@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="con-organism">
     <AtomSectionTitle :title="title" v-if="title" />
     <div class="Events">
       <AtomEvent
@@ -13,7 +13,7 @@
   </div>
   <OrganismEventsInfoPage 
   v-if="popupTriggers.buttonTrigger" 
-	:togglePopup="() => togglePopup('buttonTrigger')" /> />
+	:togglePopup="() => togglePopup('buttonTrigger')" />
 </template>
 
 

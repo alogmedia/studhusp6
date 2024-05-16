@@ -1,14 +1,6 @@
 <script></script>
 <template>
-    <div> 
+    <div class="h3-title"> 
     <slot></slot>
     </div>
  </template>
-
-<style scoped>
-    div {
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: #000000;
-    }
-</style>

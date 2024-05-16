@@ -1,8 +1,39 @@
+// ATOM CSS
 
-.EventImage {
-    width: 25%;
-    height: 10vh; /* Adjust the height as needed */
+// H3 Title 
+.h3-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000000;
 }
+// H3 Title End
+
+// Section Title 
+.section-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.section-title h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.underline-section-title {
+display: inline-block;
+width: 100%;
+border-bottom: 3px solid black; 
+}
+// Section Title End
+
+// Event Image
+.EventImage {
+    width: 33.3%;
+    height: 15vh; 
+    object-fit: cover;
+}
+// Event Image End
 
 // BUTTON CSS
 #roundbutton {  

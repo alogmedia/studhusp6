@@ -13,6 +13,17 @@ header {
   gap: 0.5rem;
 }
 
+.con-organism {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-floatright {
+  margin-top: 20px;
+  float: right;
+}
+
 .modal-event {
   position: fixed;
   display: flex;

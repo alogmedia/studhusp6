@@ -15,6 +15,16 @@ header {
 }
 // TopBar End
 
+.con-organism {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-floatright {
+  margin-top: 20px;
+  float: right;
+}
 // Event Section 
 .modal-event {
   position: fixed;
@@ -60,7 +70,6 @@ header {
   grid-column: 2 / 3; 
   grid-row: 3 / 4; 
 }
-
 #event-section-img {
   position: relative;
 

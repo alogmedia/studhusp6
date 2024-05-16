@@ -21,7 +21,6 @@
   <script setup>
   import AtomH3Title from '@/components/atoms/AtomH3Title.vue';
   import AtomParagraph from '@/components/atoms/AtomParagraph.vue';
-  import AtomRoundButtonRight from '@/components/atoms/buttons/AtomRoundButtonRight.vue';
   import 'vue3-carousel/dist/carousel.css'
   import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
@@ -48,11 +47,12 @@
         align-items: center;
         gap:10px;
         background-color: white;
+        padding: 20px 0;
     }
      .room-text {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .redcircle {

@@ -4,13 +4,14 @@
 <div class="event-section">
     <AtomEventsBanner
     @click="togglePopup('buttonTrigger')"
-     id="event-section-img" />
+     id="event-section-img" 
+     />
     <div class="date-event">
-        <MoleculeDate/>
+        <MoleculeDate />
     </div>
     <div class="info-section">
         <MoleculeInfo />
-        <MoleculeQr/>
+        <MoleculeQr />
     </div>
     <div class="about-event">
         <MoleculeAbout/>
@@ -19,8 +20,8 @@
 </div>
 </div>
 </template>
-<script setup>
 
+<script setup>
 import MoleculeAbout from '@/components/molecules/MoleculeAbout.vue';
 import MoleculeDate from '@/components/molecules/MoleculeDate.vue';
 import MoleculeInfo from '@/components/molecules/MoleculeInfo.vue';
