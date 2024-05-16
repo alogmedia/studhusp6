@@ -2,6 +2,7 @@
   <div class="con-organism">
     <AtomSectionTitle title='EVENT IDAG'/>
     <AtomHeroImage :src="DefaultImg" :alt="imageAlt" />
+  </div>
 </template>
 <script setup>
 import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
