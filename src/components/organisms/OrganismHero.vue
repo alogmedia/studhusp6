@@ -50,7 +50,7 @@ defineProps({
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 450px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
