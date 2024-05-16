@@ -29,13 +29,13 @@
       title: 'RESEVERET TIL EVENT', 
       time: 'IDAG KL. 20.00 - 23.00', 
       description: 'Bemærk: Lokalet kan frit benyttes uden for det bookede tidsrum. Spørg i baren ved spørgsmål til lokalebooking.',
-      imageSrc: 'src/assets/images/content/hero.png'
+      imageSrc: 'src/assets/images/cafe.png'
     },
     { 
       title: 'RESEVERET TIL EVENT', 
       time: 'IDAG KL. 20.00 - 23.00', 
       description: 'Bemærk: Lokalet kan frit benyttes uden for det bookede tidsrum. Spørg i baren ved spørgsmål til lokalebooking.',
-      imageSrc: 'src/assets/images/content/hero.png'
+      imageSrc: 'src/assets/images/cafe.png'
     },
   ];
   </script>
@@ -47,7 +47,6 @@
         align-items: center;
         gap:10px;
         background-color: white;
-        padding: 20px 0;
     }
      .room-text {
         display: flex;
