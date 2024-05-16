@@ -1,5 +1,6 @@
 <template>
-  <div>
+
+  <div class="moleculevents">
     <AtomSectionTitle :title="title" v-if="title" />
     <div class="Events">
       <AtomEvent
@@ -14,6 +15,7 @@
   <OrganismEventsInfoPage 
   v-if="popupTriggers.buttonTrigger" 
 	:togglePopup="() => togglePopup('buttonTrigger')" />
+
 </template>
 
 
