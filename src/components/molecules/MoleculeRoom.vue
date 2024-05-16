@@ -5,7 +5,7 @@
         <div class="room-text">
             <AtomH3Title class="section-h3title-lokale">
               <span class="redcircle"></span>
-              {{ room.title }}
+              {{ room.reason }}
             </AtomH3Title>
             <AtomH3Title>{{ room.time }}</AtomH3Title>
             <AtomParagraph>{{ room.description }}</AtomParagraph>
