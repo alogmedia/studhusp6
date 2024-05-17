@@ -42,7 +42,7 @@ onMounted(() => {
 
 <style>
 .color-shift {
-  filter: blur(50px);
+  filter: blur(150px);
   position: fixed;
   z-index: -100;
   fill: none;
