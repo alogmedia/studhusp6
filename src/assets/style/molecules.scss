@@ -1,7 +1,7 @@
 .Events {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 // Date Event
@@ -23,9 +23,10 @@
     color: #F69E67;
   }
 
-  .dateevent-p{
+  .dateevent-p {
     font-weight: 200;
   }
+
   .dateevent-img {
     width: 10%;
     object-fit: cover;
@@ -38,7 +39,7 @@
   display: flex;
   height: 100%;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
   background-color: white;
   padding: 1rem;
 }
@@ -46,58 +47,65 @@
 
 // Event Details
 .event-details {
-display: flex;
-flex-direction: column;
-gap: 10px;
-background-color: white;
-padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 1rem;
 }
 
 .event-details-item {
-display: flex;
-align-items: center;
-gap: 20px;
-padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
 }
 
 .icon {
-width: 18px;
-height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .event-details iframe {
-width: 300px;
-height: 200px;
+  width: 300px;
+  height: 200px;
 }
 // Event Details end
 
 // QR Code
 .qrcode-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 20px;
-background-color: white;
-padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 1rem;
 
-.qrcode-h3  {
-  color: #6370F1;
-}
+  .qrcode-h3 {
+    color: #6370F1;
+  }
 
-.qrcode-img {
-  width: 50%;
-}
+  .qrcode-img {
+    width: 50%;
+  }
 }
 // QR code end
 
 .backtofp-section {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  gap:20px;
+  gap: 20px;
   padding: 20px;
-  background: rgb(220,81,188);
-  background: linear-gradient(152deg, rgba(220,81,188,1) 20%, rgba(254,145,87,1) 40%, rgba(200,93,164,1) 60%, rgba(108,103,228,1) 80%, rgba(200,93,164,1) 100%);
+  background: rgb(220, 81, 188);
+  background: linear-gradient(
+    152deg,
+    rgba(220, 81, 188, 1) 20%,
+    rgba(254, 145, 87, 1) 40%,
+    rgba(200, 93, 164, 1) 60%,
+    rgba(108, 103, 228, 1) 80%,
+    rgba(200, 93, 164, 1) 100%
+  );
 }
 
 .backtofp-text {
@@ -109,7 +117,7 @@ padding: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   background-color: white;
 }
 .room-text {
@@ -120,24 +128,23 @@ padding: 1rem;
 }
 
 .room-paragraph {
-  width:85%;
+  width: 85%;
 }
 
 .redcircle {
   display: inline-block;
-  height: 18px; 
-  width: 18px; 
-  border-radius: 50%; 
-  background-color: #AF3B3B;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #af3b3b;
 }
 
 .roomimg {
-width: 30%;
-height: 100%;
-object-fit: cover;
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
 .carousel {
-text-align: left;
+  text-align: left;
 }

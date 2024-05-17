@@ -4,10 +4,10 @@
   position: fixed;
   z-index: -100;
   fill: none;
-  width: 100vh; /* Adjust the width as needed */
-  height: 100vh; /* Make the height equal to the viewport height */
-  left: -60vh; /* Position the blob on the left side */
-  top: 0; /* Position the blob at the top */
+  width: 100vh; // Adjust the width as needed
+  height: 100vh; // Make the height equal to the viewport height
+  left: -60vh; // Position the blob on the left side
+  top: 0; // Position the blob at the top
 }
 
 // H3 Title 
@@ -23,18 +23,18 @@
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-}
-.section-title h2 {
-  text-transform: uppercase;
-  font-size: 30px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  font-weight: 800;
-}
-.underline-section-title {
-display: inline-block;
-width: 100%;
-border-bottom: .5px solid black; 
+  h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-weight: 800;
+  }
+  .underline-section-title {
+    display: inline-block;
+    width: 100%;
+    border-bottom: .5px solid black; 
+  }
 }
 // Section Title End
 
@@ -82,7 +82,7 @@ border-bottom: .5px solid black;
     gap: 15px;
     margin-right: 2.5%;
   
-  .squarebuttonleft {
+    .squarebuttonleft {
       rotate: 180deg;
     }
   }

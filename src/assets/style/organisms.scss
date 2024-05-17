@@ -1,17 +1,17 @@
 // TopBar Design
 header {
-   background-color: black;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 1rem;
-   height: 10rem; // Add this line
-   width: 100%; // Add this line
- }
- 
-.flags {
-   display: flex;
-   gap: 0.5rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 10rem; // Add this line
+  width: 100%; // Add this line
+
+  .flags {
+    display: flex;
+    gap: 0.5rem;
+  }
 }
 // TopBar End
 
@@ -83,15 +83,16 @@ header {
 .about-event {
   grid-column: 2 / 3; 
   grid-row: 3 / 4; 
-}
-#event-section-img {
-  position: relative;
 
-.close-button{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+  #event-section-img {
+    position: relative;
+
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .container {
