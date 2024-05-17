@@ -1,5 +1,5 @@
 <template>
-  <Carousel :autoplay="2000" :wrap-around="true">
+  <Carousel :autoplay="4000" :wrap-around="true">
     <Slide v-for="(hero, index) in heros" :key="index">
       <div class="hero-banner">
         <!-- Pass hero.heroimg to AtomHeroImage -->
