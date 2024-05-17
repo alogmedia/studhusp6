@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" :alt="alt" :class="class" @touchend="handleEventTouch" />
+  <img :src="src" :alt="alt" :class="class" />
 </template>
 
 <script setup>
