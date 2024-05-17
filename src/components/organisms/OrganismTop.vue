@@ -1,23 +1,21 @@
-<script setup>
-import AtomLogo from '@/components/atoms/AtomLogo.vue';
-import AtomFlag from '@/components/atoms/AtomFlag.vue';
-import FlagDK from '@/assets/images/dkimg.svg';
-import FlagEN from '@/assets/images/enimg.svg';
-
-</script>
-
 <template>
-<header>
-  <AtomLogo />
+  <header>
+    <AtomLogo />
     <div class="flags">
-      <AtomFlag :src="FlagDK" alt="Danish Flag" />
-      <AtomFlag :src="FlagEN" alt="English Flag" />
+      <AtomLogging property="flagdk">
+        <AtomFlag :src="FlagDK" alt="Danish Flag" />
+      </AtomLogging>
+      <AtomLogging property="flagen">
+        <AtomFlag :src="FlagEN" alt="English Flag" />
+      </AtomLogging>
     </div>
-</header>
+  </header>
 </template>
 
-
-<style scoped>
-@import '@/assets/style/organisms.css';
-@import '@/assets/style/molecules.css';
-</style>
+<script setup>
+import AtomFlag from '@/components/atoms/AtomFlag.vue';
+import AtomLogo from '@/components/atoms/AtomLogo.vue';
+import AtomLogging from '@/components/atoms/AtomLogging.vue';
+import FlagDK from '@/assets/images/dkimg.svg';
+import FlagEN from '@/assets/images/enimg.svg';
+</script>

@@ -1,5 +1,4 @@
 .Events {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -11,9 +10,7 @@
   justify-content: flex-start;
   gap: 10px;
   background-color: white;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1rem 0;
 
   .dateevent-txt {
     display: flex;
@@ -91,3 +88,55 @@ padding: 1rem;
 }
 }
 // QR code end
+
+.backtofp-section {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+  padding: 20px;
+  background: rgb(220,81,188);
+  background: linear-gradient(152deg, rgba(220,81,188,1) 20%, rgba(254,145,87,1) 40%, rgba(200,93,164,1) 60%, rgba(108,103,228,1) 80%, rgba(200,93,164,1) 100%);
+}
+
+.backtofp-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+  background-color: white;
+}
+.room-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.room-paragraph {
+  width:85%;
+}
+
+.redcircle {
+  display: inline-block;
+  height: 18px; 
+  width: 18px; 
+  border-radius: 50%; 
+  background-color: #AF3B3B;
+}
+
+.roomimg {
+width: 30%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.carousel {
+text-align: left;
+}

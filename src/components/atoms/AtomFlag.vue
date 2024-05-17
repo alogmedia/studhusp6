@@ -1,3 +1,7 @@
+<template>
+  <img :src="src" :alt="alt" class="flag-img" />
+</template>
+
 <script setup>
 defineProps({
   src: {
@@ -10,14 +14,3 @@ defineProps({
   },
 });
 </script>
-
-<template>
-  <img :src="src" :alt="alt" class="flag-img" />
-</template>
-
-<style lang="scss" scoped>
-.flag-img {
-  width: 50px; // Set the desired width
-  height: 50px; // Set the desired height
-}
-</style>

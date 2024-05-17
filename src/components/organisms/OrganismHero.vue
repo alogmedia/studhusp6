@@ -1,20 +1,23 @@
 <template>
-  <Carousel :autoplay="2000" :wrap-around="true">
-    <Slide v-for="(hero, index) in heros" :key="index">
-      <div class="hero-banner">
-        <!-- Pass hero.heroimg to AtomHeroImage -->
-        <AtomHeroImage :src="hero.heroimg" :alt="imageAlt" />
-      </div>
-    </Slide>
+  <AtomLogging property="hero">
+    <Carousel :autoplay="4000" :wrap-around="true">
+      <Slide v-for="(hero, index) in heros" :key="index">
+        <div class="hero-banner">
+          <!-- Pass hero.heroimg to AtomHeroImage -->
+          <AtomHeroImage :src="hero.heroimg" :alt="imageAlt" />
+        </div>
+      </Slide>
 
-    <template #addons>
-      <Pagination />
-    </template>
-  </Carousel>
+      <template #addons>
+        <Pagination />
+      </template>
+    </Carousel>
+  </AtomLogging>
 </template>
 
 <script setup>
 import AtomHeroImage from '@/components/atoms/AtomHeroImage.vue';
+import AtomLogging from '@/components/atoms/AtomLogging.vue';
 import 'vue3-carousel/dist/carousel.css'
 import { ref, onMounted } from 'vue';
 import { Carousel, Slide, Pagination } from 'vue3-carousel';
@@ -45,15 +48,3 @@ defineProps({
   },
 });
 </script>
-
-<style scoped>
-.hero-banner {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-</style>
