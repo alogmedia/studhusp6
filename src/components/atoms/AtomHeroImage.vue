@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" :alt="alt" :style="backgroundStyle"/>
+  <img :src="src" :alt="alt" :style="backgroundStyle" />
 </template>
 
 <script setup>

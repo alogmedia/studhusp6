@@ -1,5 +1,4 @@
 .Events {
-    display: flex;
     flex-direction: row;
 }
 
@@ -118,6 +117,10 @@ padding: 1rem;
   flex-direction: column;
   gap: 20px;
   text-align: left;
+}
+
+.room-paragraph {
+  width:85%;
 }
 
 .redcircle {

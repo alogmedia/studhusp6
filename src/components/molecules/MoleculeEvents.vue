@@ -11,16 +11,17 @@
       />
     </div>
   </div>
-  <OrganismEventsInfoPage 
-  v-if="popupTriggers.buttonTrigger" 
-	:togglePopup="() => togglePopup('buttonTrigger')" />
+  <OrganismEventsInfoPage
+    v-if="popupTriggers.buttonTrigger"
+    :togglePopup="() => togglePopup('buttonTrigger')"
+  />
 </template>
-
 
 <script setup>
 import AtomEvent from '@/components/atoms/AtomEvent.vue';
 import AtomSectionTitle from '@/components/atoms/AtomSectionTitle.vue';
 import OrganismEventsInfoPage from '@/components/organisms/OrganismEventsInfoPage.vue';
+import AtomLogging from '@/components/atoms/AtomLogging.vue';
 import { ref, computed, onMounted } from 'vue';
 
 const popupTriggers = ref({buttonTrigger: false});

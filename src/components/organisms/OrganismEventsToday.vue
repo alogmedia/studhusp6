@@ -1,6 +1,6 @@
 <template>
   <div class="hero-today">
-    <AtomSectionTitle title='EVENT IDAG'/>
+    <AtomSectionTitle title="EVENT IDAG" />
     <AtomHeroImage :src="DefaultImg" :alt="imageAlt" />
   </div>
 </template>
@@ -16,5 +16,4 @@ defineProps({
 });
 
 const DefaultImg = "https://i.imgur.com/DvhhK2r.jpeg";
- 
 </script>

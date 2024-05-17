@@ -1,8 +1,9 @@
 <template>
-    <img :src="src" :alt="alt" :class="class">
+  <img :src="src" :alt="alt" :class="class" @touchend="handleEventTouch" />
 </template>
 
 <script setup>
+import AtomLogging from '@/components/atoms/AtomLogging.vue';
 const props = defineProps({
   src: {
     type: String,

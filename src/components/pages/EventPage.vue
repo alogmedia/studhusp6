@@ -11,4 +11,3 @@ import OrganismEventsPage from '@/components/organisms/OrganismEventsPage.vue';
     <OrganismEventsPage />
   </main>
 </template>
-

@@ -1,15 +1,18 @@
 <template>
   <div class="container">
-    <MoleculeEvents
-      v-for="month in months"
-      :key="month.title"
-      :title="month.title"
-      :limit="3"
-    />
+    <AtomLogging property="eventpage">
+      <MoleculeEvents
+        v-for="month in months"
+        :key="month.title"
+        :title="month.title"
+        :limit="3"
+      />
+    </AtomLogging>
   </div>
 </template>
 
 <script setup>
+import AtomLogging from '@/components/atoms/AtomLogging.vue';
 import MoleculeEvents from '@/components/molecules/MoleculeEvents.vue';
 import { useRouter } from 'vue-router';
 import { ref } from 'vue';

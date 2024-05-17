@@ -1,6 +1,8 @@
-<script></script>
 <template>
-    <div class="h3-title"> 
-    <slot></slot>
+    <div class="h3-title">
+      <slot></slot>
     </div>
- </template>
+  </template>
+  
+  <script></script>
+  
