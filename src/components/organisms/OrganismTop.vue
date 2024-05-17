@@ -15,9 +15,3 @@ import FlagEN from '@/assets/images/enimg.svg';
     </div>
 </header>
 </template>
-
-
-<style scoped>
-@import '@/assets/style/organisms.css';
-@import '@/assets/style/molecules.css';
-</style>

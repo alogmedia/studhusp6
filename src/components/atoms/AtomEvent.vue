@@ -18,7 +18,3 @@ const props = defineProps({
   },
 });
 </script>
-
-<style scoped>
-@import '@/assets/style/atom.css';
-</style>

@@ -41,10 +41,3 @@ const months = ref([
   { title: 'DECEMBER' },
 ]);
 </script>
-
-<style>
-.container {
-  max-height: calc(100vh - 100px); /* Adjust as needed */
-  overflow-y: auto;
-}
-</style>

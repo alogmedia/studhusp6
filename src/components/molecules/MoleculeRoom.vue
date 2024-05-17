@@ -1,7 +1,7 @@
 <template>
   <carousel ref="carousel" :items-to-show="1">
       <slide v-for="(room, index) in rooms" :key="index" class="room-container">
-            <img :src="room.image" :alt="room.title">
+            <img :src="room.image" :alt="room.title" class="roomimg">
         <div class="room-text">
             <AtomH3Title class="section-h3title-lokale">
               <span class="redcircle"></span>
@@ -45,43 +45,4 @@
   });
 
   </script>
-  
-  <style scoped> 
-     .room-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap:10px;
-        background-color: white;
-    }
-     .room-text {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .redcircle {
-        display: inline-block;
-        height: 18px; 
-        width: 18px; 
-        border-radius: 50%; 
-        background-color: #AF3B3B;
-    }
-
-img {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.carousel {
-  text-align: left;
-}
-
-.carousel__next {
-  background:RED;
-}
-
-  </style>
   
