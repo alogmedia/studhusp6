@@ -10,9 +10,7 @@
   justify-content: flex-start;
   gap: 10px;
   background-color: white;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1rem 0;
 }
 .dateevent-section .dateevent-txt {
   display: flex;
@@ -78,4 +76,57 @@
 }
 .qrcode-section .qrcode-img {
   width: 50%;
+}
+
+.backtofp-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgb(220, 81, 188);
+  background: linear-gradient(152deg, rgb(220, 81, 188) 20%, rgb(254, 145, 87) 40%, rgb(200, 93, 164) 60%, rgb(108, 103, 228) 80%, rgb(200, 93, 164) 100%);
+}
+
+.backtofp-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.room-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.room-paragraph {
+  width: 85%;
+}
+
+.redcircle {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #AF3B3B;
+}
+
+.roomimg {
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel {
+  text-align: left;
 }/*# sourceMappingURL=molecules.css.map */

@@ -1,3 +1,14 @@
+.color-shift {
+  filter: blur(150px);
+  position: fixed;
+  z-index: -100;
+  fill: none;
+  width: 100vh; /* Adjust the width as needed */
+  height: 100vh; /* Make the height equal to the viewport height */
+  left: -60vh; /* Position the blob on the left side */
+  top: 0; /* Position the blob at the top */
+}
+
 .h3-title {
   font-size: 1.4rem;
   font-weight: 800;
@@ -15,13 +26,13 @@
   font-size: 30px;
   margin-left: 5px;
   margin-bottom: 5px;
-  font-weight: 750;
+  font-weight: 800;
 }
 
 .underline-section-title {
   display: inline-block;
   width: 100%;
-  border-bottom: 3px solid black;
+  border-bottom: 0.5px solid black;
 }
 
 .EventImage {
@@ -73,4 +84,15 @@
   position: absolute;
   top: -6%;
   right: -4%;
+}
+
+.flag-img {
+  width: 50px;
+  height: 50px;
+}
+
+.paragraph-styling {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #000000;
 }/*# sourceMappingURL=atom.css.map */
