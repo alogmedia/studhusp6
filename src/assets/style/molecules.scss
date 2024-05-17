@@ -1,5 +1,6 @@
 .Events {
     flex-direction: row;
+    justify-content: space-between;
 }
 
 // Date Event
@@ -9,9 +10,7 @@
   justify-content: flex-start;
   gap: 10px;
   background-color: white;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1rem 0;
 
   .dateevent-txt {
     display: flex;
