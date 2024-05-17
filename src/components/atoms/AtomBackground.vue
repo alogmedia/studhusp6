@@ -40,15 +40,3 @@ onMounted(() => {
 </div>
 </template>
 
-<style>
-.color-shift {
-  filter: blur(150px);
-  position: fixed;
-  z-index: -100;
-  fill: none;
-  width: 100vh; /* Adjust the width as needed */
-  height: 100vh; /* Make the height equal to the viewport height */
-  left: -60vh; /* Position the blob on the left side */
-  top: 0; /* Position the blob at the top */
-}
-</style>

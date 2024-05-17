@@ -1,4 +1,14 @@
 // ATOM CSS
+.color-shift {
+  filter: blur(150px);
+  position: fixed;
+  z-index: -100;
+  fill: none;
+  width: 100vh; /* Adjust the width as needed */
+  height: 100vh; /* Make the height equal to the viewport height */
+  left: -60vh; /* Position the blob on the left side */
+  top: 0; /* Position the blob at the top */
+}
 
 // H3 Title 
 .h3-title {
@@ -83,5 +93,13 @@ border-bottom: .5px solid black;
     right: -2%;
   }
   // BUTTON END
+  .flag-img {
+    width: 50px; // Set the desired width
+    height: 50px; // Set the desired height
+  }
 
-  
+  .paragraph-styling {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    color: #000000;
+  }
