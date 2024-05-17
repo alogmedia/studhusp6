@@ -1,5 +1,5 @@
 <template>
-  <MoleculeEvents class="event-front" title="KOMMENDE EVENTS" :latest="true" :limit="3" />
+  <MoleculeEvents title="KOMMENDE EVENTS" :latest="true" :limit="3" />
   <AtomSquareButtonRight class="button-floatright" buttonTitle='SE FLERE' @click="navigateToEvents"/>
 </template>
 
