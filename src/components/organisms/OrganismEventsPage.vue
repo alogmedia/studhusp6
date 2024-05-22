@@ -14,10 +14,6 @@ import MoleculeEvents from '@/components/molecules/MoleculeEvents.vue';
 import { ref } from 'vue';
 
 const months = ref([
-  { title: 'JANUAR' },
-  { title: 'FEBRUAR' },
-  { title: 'MARTS' },
-  { title: 'APRIL' },
   { title: 'MAJ' },
   { title: 'JUNI' },
   { title: 'JULI' },
