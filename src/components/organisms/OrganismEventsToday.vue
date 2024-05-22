@@ -15,5 +15,5 @@ defineProps({
   },
 });
 
-const DefaultImg = "https://i.imgur.com/DvhhK2r.jpeg";
+const DefaultImg = "https://i.imgur.com/5priSrC.jpeg";
 </script>
