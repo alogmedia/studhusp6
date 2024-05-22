@@ -11,20 +11,7 @@
 
 <script setup>
 import MoleculeEvents from '@/components/molecules/MoleculeEvents.vue';
-import { useRouter } from 'vue-router';
 import { ref } from 'vue';
-
-const router = useRouter();
-
-const navigateToEvents = () => {
-  // Use the router instance to navigate to the "/events" route
-  router.push('/events');
-};
-
-// Expose the navigateToEvents function to the template
-defineExpose({
-  navigateToEvents
-});
 
 const months = ref([
   { title: 'JANUAR' },
