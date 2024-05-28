@@ -119,16 +119,18 @@
   align-items: center;
   gap: 10px;
   background-color: white;
+  height:200px;
 }
 .room-text {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 
 .room-paragraph {
   width: 85%;
+  margin-top: 15px;
 }
 
 .redcircle {
