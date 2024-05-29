@@ -1,6 +1,6 @@
 <template>
-    <div class="con-organism">
       <AtomSectionTitle title="RESEVEREDE LOKALER" />
+      <div class="rooms-section">
       <MoleculesRoom />
     </div>
   </template>

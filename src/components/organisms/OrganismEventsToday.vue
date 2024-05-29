@@ -1,6 +1,6 @@
 <template>
-  <div class="hero-today">
     <AtomSectionTitle title="NÆSTE EVENT" />
+    <div class="hero-today">
     <AtomHeroImage :src="DefaultImg" :alt="imageAlt" />
   </div>
 </template>

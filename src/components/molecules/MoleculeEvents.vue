@@ -1,6 +1,6 @@
 <template>
-  <div class="con-organism">
     <AtomSectionTitle :title="title" v-if="title" />
+    <div class="upcoming-events">
     <div class="Events">
       <AtomEvent
         v-for="(event, index) in limitedEvents"
