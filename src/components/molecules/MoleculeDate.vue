@@ -6,10 +6,8 @@
         alt="Kalender Dato Event"
       />
       <div class="dateevent-txt">
-        <AtomH3Title class="dateevent-h3"
-          >LØRDAG DEN 19. JUNI KLOKKEN 22</AtomH3Title
-        >
-        <AtomH3Title>DOBBELTKONCERT MED DRØM OG BÅND</AtomH3Title>
+        <AtomH3Title class="dateevent-h3">LØRDAG DEN 19. JUNI KLOKKEN 22</AtomH3Title>
+        <AtomH3Title class="datevent-title">DOBBELTKONCERT MED DRØM OG BÅND</AtomH3Title>
         <AtomParagraph class="dateevent-p">Studenterhuset Odense</AtomParagraph>
       </div>
     </div>
